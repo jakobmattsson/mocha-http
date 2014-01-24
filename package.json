@@ -19,7 +19,7 @@
     "mocha": "^1.10.0"
   },
   "dependencies": {
-    "zee": "*",
+    "zee": "^0.2.0",
     "q": "^1.0.0",
     "underscore": "^1.4.4",
     "sinon-chai": "^2.4.0",
