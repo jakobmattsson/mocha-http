@@ -27,5 +27,8 @@
     "sinon": "^1.6.0",
     "chai-as-promised": "^4.1.1",
     "mocha-as-promised": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo testing"
   }
 }
