@@ -11,3 +11,7 @@ deploy:
     tags: true
   api_key:
     secure: UHWfYV/Calr2RQ0j8c4L7TVpVQnC6tJxjmbRs59y/pMrcF6oLouTdebRrLvbEUkG3qR9/7ITnc90fpyAi8EgUsDmKPg0GX/TZzVWb0JKdyCY2m5X1/1bQklFxOkceI7d028Hb35BpILYIGtV+JaWqAsOcfZJe1u7JiyxdxMefRA=
+notifications:
+  hipchat:
+    rooms:
+      secure: csERQcykHYvDdadv16YbsBxNhTYily9qrZDuI914jacV5iyr0inaM/Q18JnIYu++rMonLibCS5KPkI1gB+nCXW/D7xWCDXENov1cCOrn0RicepNEw1h9pH+6F47Yo9ce74eRhaCcxhWgVIZt8GfeOgqrJiow9xUHmls6hk2p82o=
