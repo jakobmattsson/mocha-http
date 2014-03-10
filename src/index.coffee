@@ -2,7 +2,7 @@ chai = require 'chai'
 chaiAsPromised = require 'chai-as-promised'
 mochaAsPromised = require 'mocha-as-promised'
 sinonChai = require 'sinon-chai'
-Z = require 'zee'
+Z = require 'z-std-pack'
 Q = require 'q'
 
 {cmp} = require './cmp'
