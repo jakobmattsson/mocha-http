@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+deploy:
+  provider: npm
+  email: jakob.mattsson@gmail.com
+  skip_cleanup: true
+  on:
+    node: '0.10'
+    tags: true
+  api_key:
+    secure: UHWfYV/Calr2RQ0j8c4L7TVpVQnC6tJxjmbRs59y/pMrcF6oLouTdebRrLvbEUkG3qR9/7ITnc90fpyAi8EgUsDmKPg0GX/TZzVWb0JKdyCY2m5X1/1bQklFxOkceI7d028Hb35BpILYIGtV+JaWqAsOcfZJe1u7JiyxdxMefRA=
