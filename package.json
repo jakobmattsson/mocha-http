@@ -25,7 +25,7 @@
     "sinon-chai": "^2.4.0",
     "chai": "^1.6.1",
     "sinon": "^1.6.0",
-    "chai-as-promised": "^4.1.1",
+    "chai-as-promised": "^3.3.1",
     "mocha-as-promised": "^2.0.0"
   },
   "scripts": {
