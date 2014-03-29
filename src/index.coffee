@@ -44,7 +44,7 @@ chai.use (_chai, utils) ->
 exports.Z = Z
 
 exports.createMethods = (met, methods) ->
-  methods ?= ['get', 'post', 'put', 'del']
+  methods ?= ['get', 'post', 'put', 'del', 'head', 'trace', 'options', 'connect', 'patch']
 
   converter = (who, isLowLevel, blockers) ->
     res = {
