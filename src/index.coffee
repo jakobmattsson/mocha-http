@@ -2,7 +2,6 @@ chai = require 'chai'
 chaiAsPromised = require 'chai-as-promised'
 sinonChai = require 'sinon-chai'
 Z = require 'z-std-pack'
-Q = require 'q'
 
 {cmp} = require './cmp'
 
@@ -44,6 +43,8 @@ exports.Z = Z
 exports.createMethods = (met, methods) ->
   methods ?= ['get', 'post', 'put', 'del', 'head', 'trace', 'options', 'connect', 'patch']
 
+  pMet = Z.bindAsync(met)
+
   converter = (who, isLowLevel, blockers) ->
     res = {
       as: (who) -> converter(who, isLowLevel, blockers)
@@ -52,9 +53,8 @@ exports.createMethods = (met, methods) ->
     }
     methods.forEach (method) ->
       res[method] = (path, body, headers) ->
-        Z Z(blockers).then ->
-          Z({ method, path, isLowLevel, headers, who, body }).then (args) ->
-            Q.nfcall(met, args)
+        Z(blockers).then ->
+          pMet({ method, path, isLowLevel, headers, who, body })
     res
 
   return {

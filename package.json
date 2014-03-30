@@ -20,7 +20,7 @@
     "mocha": "^1.18.0"
   },
   "dependencies": {
-    "z-std-pack": "^0.2.2",
+    "z-std-pack": "^0.3.0",
     "q": "^1.0.0",
     "underscore": "^1.4.4",
     "sinon-chai": "^2.4.0",
