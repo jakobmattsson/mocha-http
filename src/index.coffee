@@ -1,6 +1,5 @@
 chai = require 'chai'
 chaiAsPromised = require 'chai-as-promised'
-mochaAsPromised = require 'mocha-as-promised'
 sinonChai = require 'sinon-chai'
 Z = require 'z-std-pack'
 Q = require 'q'
@@ -8,7 +7,6 @@ Q = require 'q'
 {cmp} = require './cmp'
 
 
-mochaAsPromised()
 chai.use(sinonChai)
 chai.use(chaiAsPromised)
 chai.should()

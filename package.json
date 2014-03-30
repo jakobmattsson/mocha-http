@@ -13,10 +13,11 @@
     "node": ">= 0.10 < 0.11"
   },
   "devDependencies": {
+    "mocha": "^1.18.0",
     "coffee-script": "^1.5.0"
   },
   "peerDependencies": {
-    "mocha": "^1.10.0"
+    "mocha": "^1.18.0"
   },
   "dependencies": {
     "z-std-pack": "^0.2.2",
@@ -25,8 +26,7 @@
     "sinon-chai": "^2.4.0",
     "chai": "^1.6.1",
     "sinon": "^1.6.0",
-    "chai-as-promised": "^3.3.1",
-    "mocha-as-promised": "^2.0.0"
+    "chai-as-promised": "^3.3.1"
   },
   "scripts": {
     "pretest": "coffee -co lib src",
