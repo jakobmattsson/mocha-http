@@ -29,7 +29,6 @@
     "chai-as-promised": "^3.3.1"
   },
   "scripts": {
-    "pretest": "coffee -co lib src",
-    "test": "mocha --compilers coffee:coffee-script/register --grep \"$TESTS\""
+    "test": "make test-node"
   }
 }
