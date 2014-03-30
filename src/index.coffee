@@ -18,7 +18,7 @@ chai.should()
 # equal override; resolves argument as a promise before comparing
 chai.use (_chai, utils) ->
   overrides = ['eql', 'equals']
-  
+
   overrides.forEach (methodName) ->
     utils.overwriteMethod chai.Assertion.prototype, methodName, (superMethod) ->
       (expectancy) ->
