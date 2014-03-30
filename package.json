@@ -30,6 +30,6 @@
   },
   "scripts": {
     "pretest": "coffee -co lib src",
-    "test": "mocha --grep \"$TESTS\""
+    "test": "mocha --compilers coffee:coffee-script/register --grep \"$TESTS\""
   }
 }
