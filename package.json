@@ -1,7 +1,7 @@
 {
   "name": "mocha-http",
   "description": "Mocha utilities for writing neat tests for APIs over HTTP",
-  "version": "",
+  "version": "0.2.5",
   "author": "Jakob Mattsson <jakob.mattsson@gmail.com> (jakobmattsson.se)",
   "main": "./lib/index.js",
   "repository": {
